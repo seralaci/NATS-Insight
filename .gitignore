@@ -1,0 +1,53 @@
+# Claude Code
+**/.claude/settings.local.json
+
+# Go
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+
+# Frontend dependencies
+web/node_modules/
+web/dist/
+
+# Frontend build output (embedded by Go, regenerated on build)
+cmd/nats-insight/web/assets/
+cmd/nats-insight/web/index.html
+cmd/nats-insight/web/favicon.svg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker/data/
+
+# Air (Go hot-reload)
+tmp/
+
+# SQLite
+*.db
+*.db-journal
+*.db-wal
+
+memos/
+.playwright-mcp
+nats-insight

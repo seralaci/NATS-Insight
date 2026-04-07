@@ -1,0 +1,9 @@
+.git
+bin/
+tmp/
+nats-insight
+cmd/nats-insight/web/assets
+cmd/nats-insight/web/index.html
+cmd/nats-insight/web/favicon.svg
+web/node_modules
+.playwright-mcp

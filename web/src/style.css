@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace !important; }

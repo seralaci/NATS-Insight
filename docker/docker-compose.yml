@@ -1,0 +1,21 @@
+services:
+  nats:
+    image: nats:latest
+    command: ["--js", "-m", "8222"]
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+
+  nats-insight:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      NATS_URL: nats://nats:4222
+      NATS_MONITOR_URL: http://nats:8222
+      LISTEN_ADDR: ":8080"
+      SEED_TEST_DATA: "true"
+    depends_on:
+      - nats
